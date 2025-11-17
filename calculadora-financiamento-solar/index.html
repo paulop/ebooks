@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Financiamento Solar Residencial: vale a pena investir?</title>
+  <meta name="description" content="Descubra se vale a pena financiar um sistema de energia solar! Simule parcelas, economia, retorno e descubra se compensa instalar painel solar em casa.">
+  <meta name="keywords" content="calculadora financiamento solar, economia energia solar, vale a pena painel solar, simulador fotovoltaico, payback energia solar, retorno investimento solar, financiamento sustentável, parcelas energia solar, renda painel solar">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://umanovarenda.com/calculadora-financiamento-solar.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+  <div id="app" class="max-w-7xl w-full mx-auto bg-white p-6 rounded-lg shadow mt-8 sm:rounded-none sm:px-2 sm:py-4">
+    <h1 class="text-2xl font-bold mb-2 text-gray-800">Calculadora de Financiamento de Painel Solar</h1>
+    <p class="mb-6 text-gray-600">
+      Simule se compensa investir na energia solar financiando um sistema em sua casa. Calcule parcelas, economia mensal, veja o tempo de retorno do investimento e o quanto pode economizar após quitar o financiamento.
+    </p>
+    <!-- Layout: 2 columns on desktop, 1 on mobile -->
+    <div class="flex flex-col lg:flex-row gap-6">
+      <!-- Formulário -->
+      <form @submit.prevent class="space-y-4 flex-1 max-w-xl">
+        <div>
+          <label class="block font-semibold text-gray-700 mb-1">Conta de energia atual (R$):</label>
+          <input type="number" v-model.number="contaAtual" min="0" step="0.01"
+            class="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+        <div>
+          <label class="block font-semibold text-gray-700 mb-1">Valor do sistema solar (R$):</label>
+          <input type="number" v-model.number="valorSistema" min="0" step="0.01"
+            class="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+        <div>
+          <label class="block font-semibold text-gray-700 mb-1">Taxa de juros ao mês (%):</label>
+          <input type="number" v-model.number="taxaJuros" min="0" step="0.01"
+            class="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+        <div>
+          <label class="block font-semibold text-gray-700 mb-1">Prazo do financiamento (meses):</label>
+          <input type="number" v-model.number="prazo" min="1" step="1"
+            class="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+        <div>
+          <label class="block font-semibold text-gray-700 mb-1">Tarifa mínima após solar (R$):</label>
+          <input type="number" v-model.number="tarifaMinima" min="0" step="0.01"
+            class="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+        <button type="button" @click="calcular"
+          class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded shadow transition">
+          Calcular
+        </button>
+      </form>
+      <!-- Resultados -->
+      <div class="flex-1 flex flex-col">
+        <div v-if="resultado !== null" class="mt-6 lg:mt-0 bg-green-100 border border-green-300 p-4 rounded text-green-800 text-lg font-medium flex items-center gap-2">
+          <svg class="h-6 w-6 text-green-500 inline" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          Total mensal após solar/financiamento: <span class="ml-2 font-bold">R$ {{ resultado.totalMes.toFixed(2) }}</span>
+        </div>
+        <div v-if="resultado !== null" class="mt-3 px-4 py-3 rounded border border-gray-200 bg-gray-50 text-gray-700">
+          <div><b>Parcela do financiamento:</b> R$ {{ resultado.prestacao.toFixed(2) }}</div>
+          <div><b>Conta estimada após solar:</b> R$ {{ tarifaMinima.toFixed(2) }}</div>
+          <div><b>Economia mensal durante o financiamento:</b> <span :class="resultado.economia > 0 ? 'text-green-700 font-bold' : 'text-red-600 font-bold'">{{ resultado.economia.toFixed(2) }}</span></div>
+          <div><b>Retorno do investimento (payback):</b>
+            <span v-if="resultado.payback !== null && resultado.payback > 0">{{ resultado.payback.toFixed(1) }} meses</span>
+            <span v-else class="text-red-600">Não há economia</span>
+          </div>
+          <div class="mt-2"><b>Compensa investir?</b>
+            <span :class="resultado.economia > 0 ? 'ml-2 text-green-700 font-bold' : 'ml-2 text-red-600 font-bold'">
+                {{ resultado.economia > 0 ? 'SIM' : 'NÃO' }}
+            </span>
+          </div>
+          <hr class="my-4">
+          <div>
+            <b>Economia mensal após quitar o financiamento:</b>
+            <span class="text-green-700 font-bold">R$ {{ economiaDepoisFinanciamento.toFixed(2) }}</span>
+          </div>
+          <div class="mt-2">
+            <b>Valor recomendado para renovar seu sistema em 25 anos:</b><br>
+            <span class="text-blue-700 font-bold">
+              R$ {{ valorReserva25anos.toLocaleString('pt-BR', {minimumFractionDigits:2, maximumFractionDigits:2}) }}
+            </span>
+            <span class="text-gray-600 text-sm">(valor sugerido para poupar mensalmente durante 25 anos para futuro upgrade ou troca dos painéis)</span>
+          </div>
+        </div>
+        <div class="mt-6 text-gray-500 text-xs">
+          * Simulação aproximada. Recomenda-se considerar manutenção, inflação e evolução tecnológica para estimativas completas.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        contaAtual: 600,
+        valorSistema: 12000,
+        taxaJuros: 1.0,
+        prazo: 60,
+        tarifaMinima: 80,
+        resultado: null,
+        economiaDepoisFinanciamento: 0,
+        valorReserva25anos: 0
+      },
+      methods: {
+        calcular() {
+          // Cálculo da prestação (PMT)
+          const PV = this.valorSistema;
+          const i = this.taxaJuros / 100;
+          const n = this.prazo;
+          const contaAtual = this.contaAtual;
+          const tarifaMinima = this.tarifaMinima;
+          const fator = Math.pow(1 + i, n);
+          const prestacao = (PV * i * fator) / (fator - 1);
+          const totalMes = prestacao + tarifaMinima;
+          const economia = contaAtual - totalMes;
+          const payback = economia > 0 ? (PV / economia) : null;
+
+          // Economia após financiamento: conta atual - tarifa mínima (pois após o prazo não há mais a parcela)
+          const economiaDepoisFinanciamento = contaAtual - tarifaMinima;
+
+          // Valor sugerido para guardar por mês para trocar os painéis em 25 anos
+          // Fórmula: valorSistema / (25*12)
+          const meses = 25 * 12; // 25 anos em meses
+          const valorReserva25anos = PV / meses;
+
+          this.resultado = { prestacao, totalMes, economia, payback };
+          this.economiaDepoisFinanciamento = economiaDepoisFinanciamento;
+          this.valorReserva25anos = valorReserva25anos;
+        }
+      },
+      mounted() {
+        this.calcular();
+      }
+    });
+  </script>
+</body>
+</html>
