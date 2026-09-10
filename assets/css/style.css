@@ -571,6 +571,82 @@ a:hover {
 }
 
 /* ===========================
+   PRODUCT TOOLTIP (affiliate hover)
+=========================== */
+.product-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  color: #1565c0;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dashed #1565c0;
+  cursor: pointer;
+}
+
+.product-link:hover {
+  text-decoration: none;
+  color: #0d47a1;
+}
+
+.product-link .product-tooltip {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 200;
+  background: #fff;
+  border: 1px solid #dce3f0;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,.18);
+  padding: .75rem;
+  width: 220px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.product-link:hover .product-tooltip {
+  display: block;
+}
+
+.product-tooltip img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: .5rem;
+}
+
+.product-tooltip__name {
+  font-size: .75rem;
+  color: #333;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.product-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 7px solid transparent;
+  border-top-color: #fff;
+}
+
+.product-tooltip::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid transparent;
+  border-top-color: #dce3f0;
+  margin-top: 1px;
+}
+
+/* ===========================
    RESPONSIVE
 =========================== */
 @media (max-width: 768px) {
