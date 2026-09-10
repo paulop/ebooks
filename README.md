@@ -142,3 +142,74 @@ Meta inicial: **50 profissões × 6–10 conteúdos ≈ 300–500 páginas está
 **O usuário deve encontrar conteúdo realmente útil para começar uma nova profissão. Os links de afiliados entram naturalmente como indicação das ferramentas necessárias.**
 
 **O resultado final é um site estático onde cada URL corresponde fisicamente a uma pasta com `index.html`.**
+
+---
+
+# Páginas publicadas
+
+## Estrutura base
+- [x] `/index.html` — Homepage
+- [x] `/sobre/index.html` — Sobre o site
+- [x] `/afiliados/index.html` — Política de afiliados
+- [x] `/robots.txt`
+- [x] `/sitemap.xml`
+- [x] `/assets/css/style.css`
+- [x] `/assets/js/main.js`
+
+## Profissões
+- [x] `/carpintaria/` — Como ser carpinteiro
+- [x] `/pedreiro/` — Como ser pedreiro
+- [x] `/serralheiro/` — Como ser serralheiro
+- [x] `/criacao-de-moveis/` — Como criar e vender móveis
+
+## Ferramentas
+- [x] `/ferramentas/` — Hub de ferramentas
+- [x] `/ferramentas/furadeira/` — Guia da furadeira
+
+## Guias
+- [x] `/guias/` — Hub de guias
+- [x] `/guias/como-conseguir-clientes/` — Como conseguir os primeiros clientes
+
+---
+
+# Próximas páginas
+
+## Profissões (próximas)
+- [ ] `/eletricista/` — Como ser eletricista
+- [ ] `/encanador/` — Como ser encanador
+- [ ] `/pintor/` — Como ser pintor
+- [ ] `/gesseiro/` — Como ser gesseiro
+- [ ] `/soldador/` — Como ser soldador
+- [ ] `/mecanico/` — Como ser mecânico
+- [ ] `/chaveiro/` — Como ser chaveiro
+- [ ] `/jardineiro/` — Como ser jardineiro
+- [ ] `/barbeiro/` — Como ser barbeiro
+- [ ] `/cabeleireiro/` — Como ser cabeleireiro
+- [ ] `/manicure/` — Como ser manicure
+- [ ] `/costureira/` — Como ser costureira
+- [ ] `/confeiteira/` — Como ser confeiteira
+- [ ] `/fotografo/` — Como ser fotógrafo
+- [ ] `/tecnico-em-informatica/` — Como ser técnico em informática
+- [ ] `/lavador-de-veiculos/` — Como ser lavador de veículos
+- [ ] `/instalador-de-ar-condicionado/` — Como instalar ar-condicionado
+
+## Conteúdo complementar (carpintaria)
+- [ ] `/carpintaria/como-ser-carpinteiro/`
+- [ ] `/carpintaria/ferramentas-para-carpinteiro/`
+- [ ] `/carpintaria/quanto-ganha-um-carpinteiro/`
+- [ ] `/carpintaria/como-conseguir-clientes/`
+- [ ] `/carpintaria/como-fazer-orcamento/`
+- [ ] `/carpintaria/como-cobrar-por-servico/`
+- [ ] `/carpintaria/erros-de-carpinteiro-iniciante/`
+
+## Ferramentas (próximas)
+- [ ] `/ferramentas/parafusadeira/`
+- [ ] `/ferramentas/serra-circular/`
+- [ ] `/ferramentas/lixadeira/`
+- [ ] `/ferramentas/esmerilhadeira/`
+
+## Guias (próximos)
+- [ ] `/guias/como-fazer-orcamento/`
+- [ ] `/guias/como-usar-whatsapp-para-conseguir-clientes/`
+- [ ] `/guias/como-abrir-mei/`
+- [ ] `/guias/como-cobrar-por-servico/`
