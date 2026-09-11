@@ -165,6 +165,7 @@ Meta inicial: **50 profissões × 6–10 conteúdos ≈ 300–500 páginas está
 ## Ferramentas
 - [x] `/ferramentas/` — Hub de ferramentas
 - [x] `/ferramentas/furadeira/` — Guia da furadeira
+- [x] `/ferramentas/nivel-a-laser/` — Guia do nível a laser
 
 ## Guias
 - [x] `/guias/` — Hub de guias
@@ -207,7 +208,6 @@ Meta inicial: **50 profissões × 6–10 conteúdos ≈ 300–500 páginas está
 - [ ] `/ferramentas/serra-circular/`
 - [ ] `/ferramentas/lixadeira/`
 - [ ] `/ferramentas/esmerilhadeira/`
-
 ## Guias (próximos)
 - [ ] `/guias/como-fazer-orcamento/`
 - [ ] `/guias/como-usar-whatsapp-para-conseguir-clientes/`
