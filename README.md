@@ -177,26 +177,26 @@ Meta inicial: **50 profissões × 6–10 conteúdos ≈ 300–500 páginas está
 # Próximas páginas
 
 ## Profissões (próximas)
-- [ ] `/eletricista/` — Como ser eletricista
-- [ ] `/encanador/` — Como ser encanador
-- [ ] `/pintor/` — Como ser pintor
-- [ ] `/gesseiro/` — Como ser gesseiro
-- [ ] `/soldador/` — Como ser soldador
-- [ ] `/mecanico/` — Como ser mecânico
-- [ ] `/chaveiro/` — Como ser chaveiro
-- [ ] `/jardineiro/` — Como ser jardineiro
-- [ ] `/barbeiro/` — Como ser barbeiro
-- [ ] `/cabeleireiro/` — Como ser cabeleireiro
-- [ ] `/manicure/` — Como ser manicure
-- [ ] `/costureira/` — Como ser costureira
-- [ ] `/confeiteira/` — Como ser confeiteira
-- [ ] `/fotografo/` — Como ser fotógrafo
-- [ ] `/tecnico-em-informatica/` — Como ser técnico em informática
-- [ ] `/lavador-de-veiculos/` — Como ser lavador de veículos
-- [ ] `/instalador-de-ar-condicionado/` — Como instalar ar-condicionado
+- [x] `/eletricista/` — Como ser eletricista
+- [x] `/encanador/` — Como ser encanador
+- [x] `/pintor/` — Como ser pintor
+- [x] `/gesseiro/` — Como ser gesseiro
+- [x] `/soldador/` — Como ser soldador
+- [x] `/mecanico/` — Como ser mecânico
+- [x] `/chaveiro/` — Como ser chaveiro
+- [x] `/jardineiro/` — Como ser jardineiro
+- [x] `/barbeiro/` — Como ser barbeiro
+- [x] `/cabeleireiro/` — Como ser cabeleireiro
+- [x] `/manicure/` — Como ser manicure
+- [x] `/costureira/` — Como ser costureira
+- [x] `/confeiteira/` — Como ser confeiteira
+- [x] `/fotografo/` — Como ser fotógrafo
+- [x] `/tecnico-em-informatica/` — Como ser técnico em informática
+- [x] `/lavador-de-veiculos/` — Como ser lavador de veículos
+- [x] `/instalador-de-ar-condicionado/` — Como instalar ar-condicionado
 
 ## Conteúdo complementar (carpintaria)
-- [ ] `/carpintaria/como-ser-carpinteiro/`
+- [x] `/carpintaria/como-ser-carpinteiro/`
 - [ ] `/carpintaria/ferramentas-para-carpinteiro/`
 - [ ] `/carpintaria/quanto-ganha-um-carpinteiro/`
 - [ ] `/carpintaria/como-conseguir-clientes/`
@@ -208,22 +208,23 @@ Meta inicial: **50 profissões × 6–10 conteúdos ≈ 300–500 páginas está
 
 ### Prioridade 1 — citadas nas profissões já publicadas
 - [x] `/ferramentas/serra-circular/` — Serra circular · afiliado: [Serra Circular Makita HS7010 7.1/4pol 1600W](https://meli.la/24kvkhy) · usada em: carpintaria, criação de móveis
-- [ ] `/ferramentas/parafusadeira/` — Parafusadeira · afiliado existente: [Parafusadeira Furadeira The Black Tools 2 Baterias + 145 Acessórios](https://meli.la/2qqJnzx) · usada em: carpintaria, criação de móveis, pedreiro
-- [ ] `/ferramentas/lixadeira/` — Lixadeira orbital · usada em: carpintaria, criação de móveis, serralheiro
-- [ ] `/ferramentas/esmerilhadeira/` — Esmerilhadeira · usada em: serralheiro
-- [ ] `/ferramentas/martelete/` — Martelete · usada em: pedreiro, eletricista, instalador de ar-condicionado
-- [ ] `/ferramentas/maquina-de-solda/` — Máquina de solda · usada em: serralheiro, soldador
-- [ ] `/ferramentas/serra-tico-tico/` — Serra tico-tico · usada em: carpintaria, criação de móveis
+- [x] `/ferramentas/parafusadeira/` — Parafusadeira · afiliado existente: [Parafusadeira Furadeira The Black Tools 2 Baterias + 145 Acessórios](https://meli.la/2qqJnzx) · usada em: carpintaria, criação de móveis, pedreiro
+- [x] `/ferramentas/lixadeira/` — Lixadeira orbital · usada em: carpintaria, criação de móveis, serralheiro
+- [x] `/ferramentas/esmerilhadeira/` — Esmerilhadeira · usada em: serralheiro
+- [x] `/ferramentas/martelete/` — Martelete · usada em: pedreiro, eletricista, instalador de ar-condicionado
+- [x] `/ferramentas/maquina-de-solda/` — Máquina de solda · usada em: serralheiro, soldador
+- [x] `/ferramentas/serra-tico-tico/` — Serra tico-tico · usada em: carpintaria, criação de móveis
 
 ### Prioridade 2 — profissões futuras
-- [ ] `/ferramentas/compressor-de-ar/` — Compressor de ar · usada em: pintor, serralheiro
-- [ ] `/ferramentas/pistola-de-pintura/` — Pistola de pintura · usada em: pintor
-- [ ] `/ferramentas/alicate-universal/` — Alicate universal · usada em: eletricista, serralheiro
-- [ ] `/ferramentas/multimetro/` — Multímetro · usada em: eletricista, técnico em informática
-- [ ] `/ferramentas/kit-encanador/` — Kit encanador · usada em: encanador
-- [ ] `/ferramentas/maquina-de-cortar-cabelo/` — Máquina de cortar cabelo · usada em: barbeiro, cabeleireiro
+- [x] `/ferramentas/compressor-de-ar/` — Compressor de ar · usada em: pintor, serralheiro
+- [x] `/ferramentas/pistola-de-pintura/` — Pistola de pintura · usada em: pintor
+- [x] `/ferramentas/alicate-universal/` — Alicate universal · usada em: eletricista, serralheiro
+- [x] `/ferramentas/multimetro/` — Multímetro · usada em: eletricista, técnico em informática
+- [x] `/ferramentas/kit-encanador/` — Kit encanador · usada em: encanador
+- [x] `/ferramentas/maquina-de-cortar-cabelo/` — Máquina de cortar cabelo · usada em: barbeiro, cabeleireiro
+
 ## Guias (próximos)
-- [ ] `/guias/como-fazer-orcamento/`
-- [ ] `/guias/como-usar-whatsapp-para-conseguir-clientes/`
-- [ ] `/guias/como-abrir-mei/`
-- [ ] `/guias/como-cobrar-por-servico/`
+- [x] `/guias/como-fazer-orcamento/`
+- [x] `/guias/como-usar-whatsapp-para-conseguir-clientes/`
+- [x] `/guias/como-abrir-mei/`
+- [x] `/guias/como-cobrar-por-servico/`
