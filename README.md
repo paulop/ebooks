@@ -164,8 +164,8 @@ Meta inicial: **50 profissões × 6–10 conteúdos ≈ 300–500 páginas está
 
 ## Ferramentas
 - [x] `/ferramentas/` — Hub de ferramentas
-- [x] `/ferramentas/furadeira/` — Guia da furadeira
-- [x] `/ferramentas/nivel-a-laser/` — Guia do nível a laser
+- [x] `/ferramentas/furadeira/` — Guia da furadeira · afiliado: [Parafusadeira Furadeira The Black Tools 2 Baterias + 145 Acessórios](https://meli.la/2qqJnzx)
+- [x] `/ferramentas/nivel-a-laser/` — Guia do nível a laser · afiliado: [Kit Nível A Laser Verde 12 Linhas + Suporte + Tripé](https://meli.la/1WugZ8H)
 
 ## Guias
 - [x] `/guias/` — Hub de guias
@@ -204,10 +204,23 @@ Meta inicial: **50 profissões × 6–10 conteúdos ≈ 300–500 páginas está
 - [ ] `/carpintaria/erros-de-carpinteiro-iniciante/`
 
 ## Ferramentas (próximas)
-- [ ] `/ferramentas/parafusadeira/`
-- [ ] `/ferramentas/serra-circular/`
-- [ ] `/ferramentas/lixadeira/`
-- [ ] `/ferramentas/esmerilhadeira/`
+
+### Prioridade 1 — citadas nas profissões já publicadas
+- [ ] `/ferramentas/parafusadeira/` — Parafusadeira · afiliado existente: [Parafusadeira Furadeira The Black Tools 2 Baterias + 145 Acessórios](https://meli.la/2qqJnzx) · usada em: carpintaria, criação de móveis, pedreiro
+- [ ] `/ferramentas/serra-circular/` — Serra circular · usada em: carpintaria, criação de móveis
+- [ ] `/ferramentas/lixadeira/` — Lixadeira orbital · usada em: carpintaria, criação de móveis, serralheiro
+- [ ] `/ferramentas/esmerilhadeira/` — Esmerilhadeira · usada em: serralheiro
+- [ ] `/ferramentas/martelete/` — Martelete · usada em: pedreiro, eletricista, instalador de ar-condicionado
+- [ ] `/ferramentas/maquina-de-solda/` — Máquina de solda · usada em: serralheiro, soldador
+- [ ] `/ferramentas/serra-tico-tico/` — Serra tico-tico · usada em: carpintaria, criação de móveis
+
+### Prioridade 2 — profissões futuras
+- [ ] `/ferramentas/compressor-de-ar/` — Compressor de ar · usada em: pintor, serralheiro
+- [ ] `/ferramentas/pistola-de-pintura/` — Pistola de pintura · usada em: pintor
+- [ ] `/ferramentas/alicate-universal/` — Alicate universal · usada em: eletricista, serralheiro
+- [ ] `/ferramentas/multimetro/` — Multímetro · usada em: eletricista, técnico em informática
+- [ ] `/ferramentas/kit-encanador/` — Kit encanador · usada em: encanador
+- [ ] `/ferramentas/maquina-de-cortar-cabelo/` — Máquina de cortar cabelo · usada em: barbeiro, cabeleireiro
 ## Guias (próximos)
 - [ ] `/guias/como-fazer-orcamento/`
 - [ ] `/guias/como-usar-whatsapp-para-conseguir-clientes/`
