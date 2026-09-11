@@ -166,6 +166,7 @@ Meta inicial: **50 profissões × 6–10 conteúdos ≈ 300–500 páginas está
 - [x] `/ferramentas/` — Hub de ferramentas
 - [x] `/ferramentas/furadeira/` — Guia da furadeira · afiliado: [Parafusadeira Furadeira The Black Tools 2 Baterias + 145 Acessórios](https://meli.la/2qqJnzx)
 - [x] `/ferramentas/nivel-a-laser/` — Guia do nível a laser · afiliado: [Kit Nível A Laser Verde 12 Linhas + Suporte + Tripé](https://meli.la/1WugZ8H)
+- [x] `/ferramentas/serra-circular/` — Guia da serra circular · afiliado: [Serra Circular Makita HS7010 7.1/4pol 1600W](https://meli.la/24kvkhy)
 
 ## Guias
 - [x] `/guias/` — Hub de guias
@@ -206,8 +207,8 @@ Meta inicial: **50 profissões × 6–10 conteúdos ≈ 300–500 páginas está
 ## Ferramentas (próximas)
 
 ### Prioridade 1 — citadas nas profissões já publicadas
+- [x] `/ferramentas/serra-circular/` — Serra circular · afiliado: [Serra Circular Makita HS7010 7.1/4pol 1600W](https://meli.la/24kvkhy) · usada em: carpintaria, criação de móveis
 - [ ] `/ferramentas/parafusadeira/` — Parafusadeira · afiliado existente: [Parafusadeira Furadeira The Black Tools 2 Baterias + 145 Acessórios](https://meli.la/2qqJnzx) · usada em: carpintaria, criação de móveis, pedreiro
-- [ ] `/ferramentas/serra-circular/` — Serra circular · usada em: carpintaria, criação de móveis
 - [ ] `/ferramentas/lixadeira/` — Lixadeira orbital · usada em: carpintaria, criação de móveis, serralheiro
 - [ ] `/ferramentas/esmerilhadeira/` — Esmerilhadeira · usada em: serralheiro
 - [ ] `/ferramentas/martelete/` — Martelete · usada em: pedreiro, eletricista, instalador de ar-condicionado
